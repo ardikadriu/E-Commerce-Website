@@ -1,5 +1,4 @@
-import Image from "next/image";
-import NavBar from "./components/NavBar";
+import NavBar from "./Sections/NavBar";
 
 import Section1 from "./Sections/Section1";
 import Section2 from "./Sections/Section2";

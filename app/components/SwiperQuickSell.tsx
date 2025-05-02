@@ -1,5 +1,5 @@
 "use client";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -9,7 +9,7 @@ import Image from "next/image";
 
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import CountdownTimer from "./Countdown";
 import { FaGreaterThan, FaLessThan } from "react-icons/fa";
 

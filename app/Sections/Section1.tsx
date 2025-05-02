@@ -6,7 +6,6 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { useState } from "react";
 
 const categories = [
   "Woman's Fashion",

@@ -1,5 +1,5 @@
 "use client";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { FaGreaterThan, FaLessThan } from "react-icons/fa";
 
 import { Swiper, SwiperSlide } from "swiper/react";

@@ -1,6 +1,4 @@
 "use client";
-import { useEffect, useState } from "react";
-import CountdownTimer from "../components/Countdown";
 import SwiperQuickSell from "../components/SwiperQuickSell";
 import Title from "../components/Title";
 

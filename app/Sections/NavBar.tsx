@@ -8,12 +8,6 @@ const NavBar = () => {
   const [liked, setLiked] = useState(false);
   const router = useRouter();
 
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (search.trim()) {
-      router.push(`/search?q=${encodeURIComponent(search)}`);
-    }
-  };
   return (
     <div className="flex justify-around py-5 items-center border-b border-gray-300">
       <h1 className="font-bold text-2xl">Exclusive</h1>
