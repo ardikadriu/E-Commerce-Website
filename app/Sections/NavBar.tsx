@@ -1,12 +1,10 @@
 "use client";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { CiSearch, CiHeart, CiShoppingCart } from "react-icons/ci";
 
 const NavBar = () => {
   const [search, setSearch] = useState("");
   const [liked, setLiked] = useState(false);
-  const router = useRouter();
 
   return (
     <div className="flex justify-around py-5 items-center border-b border-gray-300">
