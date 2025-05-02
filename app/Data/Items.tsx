@@ -1,0 +1,88 @@
+import Gamepad from "@/public/Gamepad.png";
+import Chair from "@/public/chair.png";
+import Keyboard from "@/public/keyboard.png";
+import Monitor from "@/public/monitor.png";
+import StarRate from "../components/StarRate";
+import LikedIcon from "../components/LikedIcon";
+export const Items = [
+  {
+    Favorite: <LikedIcon />,
+    discount: "40%",
+    src: Gamepad,
+    title: "HAVIT HV-G92 Gamepad",
+    price: "$120",
+    discountprice: "$160",
+    alt: "gamepad",
+    rate: <StarRate />,
+  },
+  {
+    Favorite: <LikedIcon />,
+    discount: "35%",
+    src: Keyboard,
+    title: "AK-900 Wired Keyboard",
+    price: "$960",
+    discountprice: "$160",
+    alt: "gamepad",
+    rate: <StarRate />,
+  },
+  {
+    Favorite: <LikedIcon />,
+    discount: "35%",
+    src: Monitor,
+    title: "HAVIT HV-G92 Gamepad",
+    price: "$120",
+    discountprice: "$160",
+    alt: "gamepad",
+    rate: <StarRate />,
+  },
+  {
+    Favorite: <LikedIcon />,
+    discount: "35%",
+    src: Chair,
+    title: "HAVIT HV-G92 Gamepad",
+    price: "$120",
+    discountprice: "$$160",
+    alt: "gamepad",
+    rate: <StarRate />,
+  },
+  {
+    Favorite: <LikedIcon />,
+    discount: "40%",
+    src: Gamepad,
+    title: "HAVIT HV-G92 Gamepad",
+    price: "$120",
+    discountprice: "$160",
+    alt: "gamepad",
+    rate: <StarRate />,
+  },
+  {
+    Favorite: <LikedIcon />,
+    discount: "35%",
+    src: Keyboard,
+    title: "AK-900 Wired Keyboard",
+    price: "$960",
+    discountprice: "$160",
+    alt: "gamepad",
+    rate: <StarRate />,
+  },
+  {
+    Favorite: <LikedIcon />,
+    discount: "35%",
+    src: Monitor,
+    title: "HAVIT HV-G92 Gamepad",
+    price: "$120",
+    discountprice: "$160",
+    alt: "gamepad",
+    rate: <StarRate />,
+  },
+  {
+    Favorite: <LikedIcon />,
+    discount: "35%",
+    src: Chair,
+    title: "HAVIT HV-G92 Gamepad",
+    price: "$120",
+    discountprice: "$160",
+    alt: "gamepad",
+    rate: <StarRate />,
+  },
+];
