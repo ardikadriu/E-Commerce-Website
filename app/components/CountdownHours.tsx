@@ -1,10 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
 
-export default function CountdownTimer() {
+const CountdownHours = () => {
   const targetTime =
     new Date().getTime() +
-    3 * 24 * 60 * 60 * 1000 + // 3 days
+    5 * 24 * 60 * 60 * 1000 + // 5 days
     23 * 60 * 60 * 1000 + // 23 hours
     19 * 60 * 1000 + // 19 minutes
     56 * 1000; // 56 seconds
@@ -33,40 +33,38 @@ export default function CountdownTimer() {
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [calculateTimeLeft]);
+  }, []);
 
   if (!timeLeft) return <p>Countdown finished!</p>;
-
   return (
-    <div className="flex gap-20 text-center ">
-      <div className="font-bold text-4xl ">
-        <h1>Flash Sales</h1>
+    <div className="flex gap-4 my-8">
+      <div className="w-[62px] h-[62px] rounded-full bg-gray-300 flex flex-col items-center justify-center">
+        <h1> {timeLeft.hours}</h1>
+        <h2 className="text-[10px]">Hours</h2>
       </div>
-      <div className="flex gap-5 items-center ">
-        <div>
-          <h2>Days</h2>
-          <h1 className="font-bold text-3xl"> {timeLeft.days} :</h1>
-        </div>
-        <div>
-          <h1>Hours</h1>
-          <h1 className="font-bold text-3xl "> {timeLeft.hours} :</h1>
-        </div>
-        <div>
-          <h1>Minutes</h1>
-          <h1 className="font-bold text-3xl"> {timeLeft.minutes} :</h1>{" "}
-        </div>
-        <div>
-          <h1>Seconds</h1>
-          <h2 className="font-bold text-3xl">{timeLeft.seconds}</h2>
-        </div>
+      <div className="w-[62px] h-[62px] rounded-full bg-gray-300 flex flex-col items-center justify-center">
+        {" "}
+        <h1> {timeLeft.days}</h1>
+        <h2 className="text-[10px]">Days</h2>
+      </div>
+      <div className="w-[62px] h-[62px] rounded-full bg-gray-300 flex flex-col items-center justify-center">
+        {" "}
+        <h1> {timeLeft.minutes}</h1>
+        <h2 className="text-[10px]">Minutes</h2>
+      </div>
+      <div className="w-[62px] h-[62px] rounded-full bg-gray-300 flex flex-col items-center justify-center">
+        {" "}
+        <h1> {timeLeft.seconds}</h1>
+        <h2 className="text-[10px]">Seconds</h2>
       </div>
     </div>
   );
-}
+};
+
+export default CountdownHours;

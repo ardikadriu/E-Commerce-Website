@@ -1,13 +1,15 @@
 import React from "react";
 import { ThisMonthBest } from "../Data/ThisMonthBest";
 import Image from "next/image";
+import { CiStar } from "react-icons/ci";
 
 const BestSellingMonth = () => {
+  const stars = [];
   return (
     <div className="">
-      <div className="w-full flex  justify-between items-center">
+      <div className="w-full flex  justify-between items-center mb-16">
         <h1 className="text-4xl font-bold">Best Selling Products</h1>{" "}
-        <button className="bg-orange-500 text-white py-4 px-10 rounded-md">
+        <button className="bg-orange-500 text-white py-4 px-10 rounded-md hover:cursor-pointer">
           View All
         </button>
       </div>
@@ -19,8 +21,16 @@ const BestSellingMonth = () => {
               {" "}
               <Image src={ThisMonthBest.src} alt="hello" />
             </div>
-            <h1>{ThisMonthBest.name}</h1>
-            <h2>{ThisMonthBest.price}</h2>
+            <h1 className="font-bold">{ThisMonthBest.name}</h1>
+            <h2 className="text-red-500 my-1 ">
+              {ThisMonthBest.price}
+              <span>
+                <del className="text-gray-400 ml-2">
+                  {ThisMonthBest.discountprice}
+                </del>
+              </span>
+            </h2>
+            <h3>{ThisMonthBest.Rates}</h3>
           </div>
         ))}
       </div>

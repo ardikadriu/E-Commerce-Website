@@ -57,7 +57,7 @@ const SwiperQuickSell = () => {
         {Items.map((Items, index) => (
           <SwiperSlide key={index} className="w-[270px] bg-gray-200  relative">
             <div className=" flex justify-between items-top px-4 py-5">
-              <button className="bg-orange-600 text-white rounded-sm px-5 h-[26px]">
+              <button className="bg-orange-500 text-white rounded-sm px-5 h-[26px]">
                 {Items.discount}
               </button>
               <div className="flex flex-col gap-4">
@@ -90,7 +90,7 @@ const SwiperQuickSell = () => {
         ))}
       </Swiper>
       <div className="w-full flex items-center my-15 flex-col">
-        <button className="bg-orange-700 text-white px-10 py-8 rounded-sm hover:cursor-pointer">
+        <button className="bg-orange-500 text-white px-10 py-8 rounded-sm hover:cursor-pointer">
           View All Products
         </button>
         <div className="bg-gray-300 w-[80%] h-[2px] mt-20"></div>

@@ -49,7 +49,7 @@ const SliderForCategories = () => {
       >
         {Categories.map((Categories, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col items-center hover:bg-orange-600 py-10 hover:text-white border rounded-sm  hover:curspo">
+            <div className=" flex flex-col items-center hover:bg-orange-500 py-10 hover:text-white border rounded-sm  hover:cursor-pointer">
               <h1 className="mb-4">{Categories.Device}</h1>
               <h2>{Categories.category}</h2>
             </div>
