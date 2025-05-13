@@ -1,3 +1,4 @@
+import Footer from "./Sections/Footer";
 import NavBar from "./Sections/NavBar";
 import Section1 from "./Sections/Section1";
 import Section2 from "./Sections/Section2";
@@ -18,6 +19,7 @@ export default function Home() {
       <Section5 />
       <Section6 />
       <Section7 />
+      <Footer />
     </div>
   );
 }

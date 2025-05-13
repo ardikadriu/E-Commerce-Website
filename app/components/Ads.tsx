@@ -4,7 +4,7 @@ import { IoShieldCheckmarkOutline } from "react-icons/io5";
 
 const Ads = () => {
   return (
-    <div className=" flex justify-around mt-20">
+    <div className=" flex justify-around my-30">
       <div className="flex flex-col  items-center">
         <div className="w-20 h-20 bg-gray-300 rounded-full flex justify-center items-center">
           <div className="w-14 h-14 bg-black rounded-full flex justify-center items-center">
