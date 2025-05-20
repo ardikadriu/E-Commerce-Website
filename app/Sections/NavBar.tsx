@@ -15,17 +15,17 @@ const NavBar = () => {
         <li>About</li>
         <li>Sign Up</li>
       </ul>
-      <div className="flex items-center">
-        <div className="bg-gray-200 flex items-center px-2">
+      <div className="flex items-center gap-2">
+        <div className="bg-gray-200 flex items-center px-2 rounded-sm">
           {" "}
           <input
             type="text"
             placeholder="Search..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="px-3 py-2  border-gray-300 rounded-lg focus:outline-none focus:ring focus:border-blue-400"
+            className="px-3 py-2   rounded-lg outline-none border-none"
           />
-          <CiSearch type="submit" size={25} />
+          <CiSearch type="submit" className="hover:cursor-pointer" size={25} />
         </div>
 
         <CiHeart

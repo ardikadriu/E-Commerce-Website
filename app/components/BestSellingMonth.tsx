@@ -1,10 +1,8 @@
 import React from "react";
 import { ThisMonthBest } from "../Data/ThisMonthBest";
 import Image from "next/image";
-import { CiStar } from "react-icons/ci";
 
 const BestSellingMonth = () => {
-  const stars = [];
   return (
     <div className="">
       <div className="w-full flex  justify-between items-center mb-16">

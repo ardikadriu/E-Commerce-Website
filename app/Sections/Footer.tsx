@@ -34,7 +34,7 @@ const Footer = ({ onSend }: { onSend?: (email: string) => void }) => {
   };
 
   return (
-    <div className="flex justify-center bg-black text-white">
+    <div className="flex justify-center bg-black text-white ">
       <div className="w-[80%] py-20 flex justify-between">
         <div>
           <h3 className="font-bold text-lg mb-2">Exclusive</h3>

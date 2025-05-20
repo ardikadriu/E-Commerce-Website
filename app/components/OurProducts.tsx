@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Categories } from "../Data/Categories";
+import {} from "../Data/Categories";
 import { FaGreaterThan, FaLessThan } from "react-icons/fa";
 import { Products, SecondProducts } from "../Data/Products";
 import { MdOutlineRemoveRedEye } from "react-icons/md";

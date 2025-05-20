@@ -1,11 +1,8 @@
 import food from "@/public/Products/Dog-food.png";
 import Camera from "@/public/Products/Camera.png";
 import Laptop from "@/public/Products/Laptop.png";
-import KidsCar from "@/public/Products/Electric car.png";
-import Gamepad from "@/public/Gamepad.png";
-import Jacket from "@/public/Products/Jacket.png";
+
 import LikedIcon from "../components/LikedIcon";
-import Cleats from "@/public/Products/football cleats.png";
 import curlogy from "@/public/Products/curology-j7pKVQrTUsM-unsplash 1.png";
 export const Products = [
   {
