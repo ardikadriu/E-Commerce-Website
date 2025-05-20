@@ -1,6 +1,6 @@
 "use client";
 import { useRef } from "react";
-import { Autoplay, Navigation, Grid } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { FaGreaterThan, FaLessThan } from "react-icons/fa";

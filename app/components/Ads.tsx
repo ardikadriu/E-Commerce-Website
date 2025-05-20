@@ -37,7 +37,7 @@ const Ads = () => {
         </div>
         <div className="text-center mt-4">
           <h1 className="font-bold text-[28px]">MONEY BACK GUARANTEE</h1>
-          <p className="text-[21px]">We reurn money within 30 days</p>
+          <p className="text-[21px]">We return money within 30 days</p>
         </div>
       </div>
     </div>
