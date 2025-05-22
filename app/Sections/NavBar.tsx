@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 import { CiSearch, CiHeart, CiShoppingCart } from "react-icons/ci";
 
@@ -10,10 +11,18 @@ const NavBar = () => {
     <div className="flex justify-around py-5 items-center border-b border-gray-300">
       <h1 className="font-bold text-2xl">Exclusive</h1>
       <ul className="flex gap-10 hover:cursor-pointer">
-        <li>Home</li>
+        <Link href={"/"}>
+          {" "}
+          <li>Home</li>
+        </Link>
         <li>Contact</li>
-        <li>About</li>
-        <li>Sign Up</li>
+        <Link href={"#footer"} className="scroll-smooth">
+          {" "}
+          <li>About</li>
+        </Link>
+        <Link href={"Register"}>
+          <li>Sign Up</li>
+        </Link>
       </ul>
       <div className="flex items-center gap-2">
         <div className="bg-gray-200 flex items-center px-2 rounded-sm">

@@ -40,7 +40,7 @@ export default function CountdownTimer() {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [calculateTimeLeft]);
+  });
 
   if (!timeLeft) return <p>Countdown finished!</p>;
 

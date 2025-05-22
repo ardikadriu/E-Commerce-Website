@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import Image from "next/image";
 import Qrcode from "@/public/QR code.png";
+import Link from "next/link";
 
 const Footer = ({ onSend }: { onSend?: (email: string) => void }) => {
   const [email, setEmail] = useState("");
@@ -34,7 +35,7 @@ const Footer = ({ onSend }: { onSend?: (email: string) => void }) => {
   };
 
   return (
-    <div className="flex justify-center bg-black text-white ">
+    <div id="footer" className="flex justify-center bg-black text-white ">
       <div className="w-[80%] py-20 flex justify-between">
         <div>
           <h3 className="font-bold text-lg mb-2">Exclusive</h3>
@@ -67,7 +68,10 @@ const Footer = ({ onSend }: { onSend?: (email: string) => void }) => {
           <h3 className="font-semibold mb-2">Account</h3>
           <ul className="space-y-1 text-sm">
             <li>My Account</li>
-            <li>Login / Register</li>
+            <li>
+              <Link href={"Login"}>Login</Link> /{" "}
+              <Link href={"Register"}>Register</Link>
+            </li>
             <li>Cart</li>
             <li>Wishlist</li>
             <li>Shop</li>
